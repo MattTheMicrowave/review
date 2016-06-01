@@ -12,16 +12,10 @@
     <!-- Here's where we'll add a new task -->
     <form method="POST" action="/tasks">
       <input type="text" name="text">
-      <input type="text" name="version">
       <input type="submit" value="Submit">
     </form>
 
 
-    <ul>
-    <% for (idx in tasks) { %>
-    <li><%= tasks[idx]['text'] %> : <%= tasks[idx]['version'] %></li>
-    <% } %>
-
-    </ul>
+   
   </body>
 </html>
